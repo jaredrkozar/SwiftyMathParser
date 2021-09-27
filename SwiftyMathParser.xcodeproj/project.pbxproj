@@ -65,15 +65,23 @@
 				7F4407B527019880003AAAA5 /* AppDelegate.swift */,
 				7F4407B727019880003AAAA5 /* SceneDelegate.swift */,
 				7F4407B927019880003AAAA5 /* ViewController.swift */,
-				7F4407C9270198A3003AAAA5 /* Extensions.swift */,
-				7F4407CB270198BF003AAAA5 /* Parser.swift */,
+				7F4407CF27019AD3003AAAA5 /* Classes */,
 				7F4407BB27019880003AAAA5 /* Main.storyboard */,
 				7F4407BE27019882003AAAA5 /* Assets.xcassets */,
 				7F4407C027019882003AAAA5 /* LaunchScreen.storyboard */,
 				7F4407C327019882003AAAA5 /* Info.plist */,
-				7F4407CD270198D4003AAAA5 /* PerformMath.swift */,
 			);
 			path = SwiftyMathParser;
+			sourceTree = "<group>";
+		};
+		7F4407CF27019AD3003AAAA5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F4407C9270198A3003AAAA5 /* Extensions.swift */,
+				7F4407CD270198D4003AAAA5 /* PerformMath.swift */,
+				7F4407CB270198BF003AAAA5 /* Parser.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
