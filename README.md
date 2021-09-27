@@ -76,7 +76,7 @@ to round the value to the third decimal place. Likewise, you can replace the val
 You can download this CocoaPod by adding the following line to your Podfile:
 
 ```swift
-pod 'MathParser'
+pod 'SwiftyMathParser'
 ```
 
 ## About the author
