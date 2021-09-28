@@ -43,13 +43,14 @@ This expression would print out 6.
 You can also do more complicated expressions, such as:
 
 ```swift
-let complicatedexpression = Parser.parseEquation(equation: "(((3+5)^2)%9)")
+let complicatedexpression = Parser.parseEquation(equation: "(((3+5.2)^2.12)%9.3)")
 print(complicatedexpression)
 ```
         
-This expression would print out 1.
+This expression would print out 2.8536460328.
 
 Note: This function returns a decimal value, and you can round the output using the .round function (described below).
+
 **Checking an expression**
 
 You can also check an expression to see if is equal to a value. This function outputs a boolean; if the two values are equal, the function returns true, and if the two values are not equal not equal, the function returns false. Here is an example:
@@ -63,7 +64,7 @@ Note: you must include an equals sign. If you don't, the function will return fa
 
 **Rounding numbers**
 
-To round numbers, you simply call the .round method on any decimal value (such as after the parseEquation function) to round the output. FOr examplle, you can say 
+To round numbers, you simply call the .round function on any decimal value (such the output of the parseEquation function) to round the output. For example, you can say:
 
 ```swift
 let roundNumber = Parser.parseEquation(equation: "6/1.23").round(places: 3)
