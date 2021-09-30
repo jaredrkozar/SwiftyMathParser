@@ -31,13 +31,18 @@ public class Parser {
                 return 0
             }
             
-            answer = Double(newequation)!
+            guard let answer = Double(newequation) else {
+                let newanswer = Parser.parseEquation(equation: newequation)
+                return newanswer
+            }
+            
+            return answer
         }
         
         if newequation.contains(Operators.add.rawValue) {
         
-            let addEq = newequation.split(separator: "+")
-
+            let addEq = newequation.split(separator: "+".first!)
+            
             answer = PerformMath(leftNum: Double(addEq[0])!, rightNum: Double(addEq[1])!).addNums()
             
         }
@@ -95,6 +100,8 @@ public class Parser {
            
             answer = PerformMath(leftNum: Double(modEq[0])!, rightNum: Double(modEq[1])!).modNums()
         }
+    
+        
         return answer
     }
 
